@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+
+<head>
+    <link rel="preconnect" href="<https://fonts.googleapis.com>">
+    <link rel="preconnect" href="<https://fonts.gstatic.com>" crossorigin>
+    <link href="<https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap>" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<p align="center">
+
+
+
+    <button id="playpausebtn">Play</button>
+    <button id="mutebtn">Stop</button>
+
+
+    <script>
+        var audio,
+            playbtn,
+            mutebtn,
+            seek_bar;
+
+        function initAudioPlayer() {
+            audio = new Audio();
+            audio.src = "Violin Concerto in F major, RV 293 'Autumn'.mp3";
+            audio.loop = true;
+            audio.play();
+            // Definir referências de objeto
+            playbtn = document.getElementById("playpausebtn");
+            mutebtn = document.getElementById("mutebtn");
+            // Adicionar tratamento de eventos
+            playbtn.addEventListener("click", playPause);
+            mutebtn.addEventListener("click", mute);
+            // Funções
+            function playPause() {
+                if (audio.paused) {
+                    audio.play();
+                    playbtn.style.background = "url(play.png) no-repeat";
+                } else {
+                    audio.pause();
+                    playbtn.style.background = "url(stop.png) no-repeat";
+                }
+            }
+
+            function mute() {
+                if (audio.muted) {
+                    audio.muted = false;
+                    mutebtn.style.background = "url(play.png) no-repeat";
+                } else {
+                    audio.muted = true;
+                    mutebtn.style.background = "url(stop.png) no-repeat";
+                }
+            }
+        }
+
+        window.addEventListener("load", initAudioPlayer);
+    </script>
+
+
+    <body>
+        <header class="header-wrapper">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper"><input type="checkbox" id="toggle"><label class="checkbox" for="toggle"><!--div.trace*3--><div class="trace"></div><div class="trace"></div><div class="trace"></div></label>
+                        <!--div.menu-->
+                        <div class="menu"></div>
+                        <!--nav.menu-items-->
+                        <nav class="menu-items">
+                            <ul>
+                                <!--li*3-->
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Sobre</a></li>
+                                <li><a href="#">Projetos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+
+            <h1>Irene Silva França</h1>
+
+            <h2>Estudante Sistema de Informação</h2>
+            <h2>Ciências Contábeis</h2>
+            <div class="social-media"><a href="https://github.com/issf69">Github</a><a href="https://www.instagram.com/eterno____aprendiz/">Instagram</a><a href="https://www.facebook.com/people/Dev-Solitarya/pfbid0Yzk5RhrSP1m9KrwZCqcCh3RRgDAgfXNQUEp3PiFDfewHSsBw9uwcruxz38JHyj8Dl/">Linkedin</a>
+                <a href="https://www.youtube.com/channel/UCXXNb9L0-8eIrAjWM0QrPwQ">Youtube</a><a href="https://www.facebook.com/profile.php?id=100090275500912">Facebook</a>
+            </div>
+        </header>
+
+        <main class="container">
+            <div class="container">
+
+                <div class="card-text">
+                    <p align="center"><img src="https://user-images.githubusercontent.com/105497075/221914287-efd9f004-e1f9-4444-b6fc-d4c0e55d15af.gif" src=".github/preview.jpg" width="50%"></p>
+                    <p align="center"><img src="https://user-images.githubusercontent.com/105497075/226107948-b2a3fbc3-9320-4982-b505-09861eef9dcf.gif" src=".github/preview.jpg" width="10%"><br>Olá! Meu Nome é Irene . </p>👩‍🎓Estudante na área de Sistema de Informação,
+                    cursando 7º período. Pretendo, enquanto respirar, continuar estudando. Sempre, aperfeiçoando e desenvolvendo novas habilidades, em busca novos desafios, conhecimento e aprendizado. ❤️ ️Amo tecnologia, viajo o mundo virtual em busca
+                    das experiências, e descobertas revolucionárias. O que mais me motiva é saber que para desenvolver habilidades basta estarmos disponíveis para aceitar o novo. 👀Veja abaixo um pouco das histórias das redes sociais e meus projetos.🎉
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper">
+                        <h2>Meus Certificados</h2>
+                        <p> Minhas Conquistas</p>
+                    </div>
+                </div>
+                <br>
+
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado atento44.png" width="100%">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado atento43.png" width="100%">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado atento42.png" width="100%">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado atento41.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado corretora de imoveis40.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado OutSystems39.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 1.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 2 css transsitions.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 3 Dio certificadohtml-css.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 4.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 5.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 6.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado 7.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 8.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 9 png.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 10 png.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 11 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 12 png.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 13.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 14.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 15.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 16.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 17.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 18 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 19.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 20.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 21 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 22.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 23.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 24 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 25 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 26 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado rockseat 27.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 28.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 29 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 30 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 31.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 32 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 33.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 34.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 35.png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 36 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 37 .png" width="100%">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-wrapper"><img src="./certificado dio 38 .png" width="100%">
+                    </div>
+                </div>
